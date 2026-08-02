@@ -1,0 +1,6 @@
+{
+  "name": "Gatekeeper Shield",
+  "description": "Anti-AI Scam Protector & Job Vacancy Risk Analyzer. Upload screenshots or job offers to detect AI-generated scams with OCR analysis.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

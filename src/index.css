@@ -1,0 +1,98 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: #fdf4f8;
+    color: #4c0519;
+  }
+
+  h1, h2, .font-serif-aesthetic {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+
+  .font-display-luxury {
+    font-family: 'Cinzel', serif;
+  }
+
+  .font-stylish-brand {
+    font-family: 'Cinzel Decorative', 'Playfair Display', Georgia, serif;
+  }
+
+  .font-sans-clean {
+    font-family: 'Outfit', sans-serif;
+  }
+}
+
+/* Stylish Brand Heading with Purple, Light Purple, and Light Maroon gradient */
+.stylish-brand-heading {
+  font-family: 'Cinzel Decorative', 'Playfair Display', Georgia, serif;
+  background: linear-gradient(135deg, #8b5cf6 0%, #c084fc 30%, #f472b6 55%, #e11d48 80%, #be185d 100%);
+  background-size: 200% auto;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  display: inline-block;
+  letter-spacing: 0.01em;
+}
+
+/* Shimmer Shining Animation */
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.shimmer-text {
+  background: linear-gradient(90deg, #be185d 0%, #c026d3 30%, #d97706 50%, #c026d3 70%, #be185d 100%);
+  background-size: 200% auto;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: shimmer 4s linear infinite;
+}
+
+.shimmer-button {
+  background: linear-gradient(110deg, #be185d 0%, #9d174d 35%, #a21caf 50%, #9d174d 65%, #be185d 100%);
+  background-size: 200% 100%;
+  animation: shimmer 3.5s ease-in-out infinite;
+}
+
+.shiny-border {
+  position: relative;
+}
+.shiny-border::before {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(135deg, rgba(240, 171, 252, 0.8), rgba(245, 158, 11, 0.6), rgba(225, 29, 72, 0.5), rgba(192, 38, 211, 0.8));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+/* Custom scrollbar for light aesthetic theme */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fbcfe8;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #be185d;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9f1239;
+}
+
